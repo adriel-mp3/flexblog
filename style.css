@@ -2,7 +2,6 @@ body {
   margin:0;
   padding: 0;
   font-family: "Nunito",sans-serif;
-  margin-bottom: 600px;
 }
 
 img {
@@ -180,6 +179,7 @@ span{
   flex-wrap: wrap;
   align-items: flex-end;
   gap:10px;
+  margin-bottom: 60px;
 }
 
 .planos-item {
@@ -250,5 +250,130 @@ span{
   background: #2C70FF;
   display: block;
   margin-left: 1px;
+}
+.vantagens {
+  margin-bottom: 60px;
+}
+
+
+.vantagens ul {
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.vantagens li {
+  flex:1 1 300px;
+}
+
+.vantagens h2 {
+  font-size: 2.25rem;
+  color:#A4A4A4;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vantagens h2::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width:8px;
+  margin-right: 10px;
+}
+
+.vantagens-item:nth-of-type(3n+1) h2::before {
+  background:#AE81FF;
+}
+
+.vantagens-item:nth-of-type(3n+2) h2::before {
+  background:#F9265E;
+}
+
+.vantagens-item:nth-of-type(3n+3) h2::before {
+  background:#66D9EB;
+}
+
+.vantagens p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color:#7C7C7C;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  padding: 60px calc((100% - 960px) / 2);
+  flex-wrap: wrap;
+  background: #f7f7f7;
+}
+
+.newsletter-info {
+  margin: 10px;
+}
+
+.newsletter-info h2 {
+  font-size: 3rem;
+  color:#A4A4A4;
+}
+
+.newsletter-info p{
+  max-width: 20ch;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #7C7C7C;
+}
+
+.newsletter-info{
+  flex:1 1 200px;
+  margin-right: 40px;
+}
+
+.newsletter-form {
+  flex:2 1 260px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+}
+
+.newsletter-form input {
+  flex:3 1 300px;
+  border:4px solid #2C70FF;
+  border-radius: none;
+  padding:18px;
+  color:#7C7C7C;
+  font-style: italic;
+  font-family: "Nunito",sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+  background: transparent;
+}
+
+.newsletter button {
+  flex:1 1 200px;
+  border:none;
+  background-color: #2C70FF;
+  color:#FFFFFF;
+  font-family: "Nunito",sans-serif;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px 15px;
+  cursor: pointer;
+}
+
+.rodape {
+    background: #2C70FF;
+    text-align: center;
+    font-size: 2.25rem;
+    padding: 80px calc((100% - 960px) / 2);
+}
+
+.rodape p {
+  color:#122AB2;
 }
 
